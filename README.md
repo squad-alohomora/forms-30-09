@@ -13,4 +13,6 @@
 
 - Miguel Cardoso
 
+- Nathallye Thalya Regina Ferreira Tavares
+
 - Milena Carvalho Nascimento
