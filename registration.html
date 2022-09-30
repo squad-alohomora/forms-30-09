@@ -16,27 +16,24 @@
 
         <label for="name">
           Nome*:
-          <input type="text" name="name" id="name" required placeholder="Digite o nome"
-             />
+          <input type="text" name="name" id="name" required placeholder="Digite o nome" oninput="this.setCustomValidity('')"  oninvalid="this.setCustomValidity('preencha o nome')"  />
         </label>
 
         <label for="email">
           E-mail*:
-          <input type="email" name="email" id="email" required placeholder="Digite o e-mail"
-            />
+          <input type="email" name="email" id="email" required placeholder="Digite o e-mail" oninput="this.setCustomValidity('')" oninvalid="this.setCustomValidity('preencha o email')" />
         </label>
 
         <label for="password">
           Senha*:
           <input type="password" name="password" id="password" required placeholder="Digite a senha"
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-              title="A senha deve conter ao menos uma letra minúscula, uma letra maiúscula, um número e pelo menos 8 caracteres" />
+              title="A senha deve conter ao menos uma letra minúscula, uma letra maiúscula, um número e pelo menos 8 caracteres" oninput="this.setCustomValidity('')"  oninvalid="this.setCustomValidity('Digite uma senha digna de ser hackeada')"/>
         </label>
 
         <label for="password">
           Confirme a Senha*:
-          <input type="password" name="password" id="password" required placeholder="Confirme a senha"
-            />
+          <input type="password" name="password" id="password" required placeholder="Confirme a senha" oninvalid="this.setCustomValidity('Digite uma senha digna de ser hackeada')" />
         </label>
 
         <button class="button" type="submit">continuar</button>
